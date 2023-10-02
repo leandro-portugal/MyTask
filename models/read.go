@@ -2,7 +2,7 @@ package models
 
 import "github.com/leandro-portugal/MyTask.git/db"
 
-func read(id int64) (task Task, err error) {
+func Read(id int64) (task Task, err error) {
 
 	conn, err := db.OpenConnection()
 
