@@ -23,7 +23,7 @@ type DBSettings struct {
 	Database string
 }
 
-func init() {
+func Init() {
 
 	viper.SetDefault("api.port", "9000")
 	viper.SetDefault("database.hostname", "localhost")
@@ -31,7 +31,7 @@ func init() {
 
 }
 
-func load() error {
+func Load() error {
 
 	viper.SetConfigName("settings")
 	viper.SetConfigType("toml")
